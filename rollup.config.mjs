@@ -5,7 +5,6 @@ import pkg from './package.json' assert { type: "json" };
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import external from 'rollup-plugin-peer-deps-external';
-// import { terser } from 'rollup-plugin-terser';
 
 const extensions = ['.js', '.ts'];
 
@@ -22,7 +21,6 @@ export default [
       commonjs(),
       typescript({ tsconfig: './tsconfig.json' }),
       // babel({ exclude: 'node_modules/**', extensions, babelHelpers: 'bundled' }),
-      // terser(),
     ],
     onwarn: (warning) => {
       if (warning.code === 'THIS_IS_UNDEFINED') return;
