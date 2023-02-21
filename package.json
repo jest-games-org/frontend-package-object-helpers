@@ -1,7 +1,7 @@
 {
   "name": "@jest-games-org/frontend-package-object-helpers",
   "description": "This frontend package provides object helper methods for shared functionality.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "jest-games-llc",
   "license": "ISC",
   "main": "dist/index.cjs.js",
