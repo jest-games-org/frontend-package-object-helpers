@@ -1,10 +1,9 @@
 import { renderHook, RenderHookResult } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
-import { useBoolean } from "../../hooks";
+import { useBoolean } from '../../hooks';
 
 describe('GIVEN the method', () => {
   let hook: RenderHookResult<[boolean, () => void, () => void, () => void], unknown>;
-
 
   describe('WHEN the initial value is false', () => {
     beforeEach(() => {
